@@ -1,6 +1,6 @@
-module github.com/alanshaw/go-carbites
+module github.com/whitiy666/go-carbites
 
-go 1.21.0
+go 1.23
 
 require (
 	github.com/ipfs/go-block-format v0.2.0
