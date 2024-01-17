@@ -3,12 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/whitiy666/go-carbites"
 	"io"
 	"os"
 	"path/filepath"
 	"strings"
-
-	"github.com/alanshaw/go-carbites"
 
 	cli "github.com/urfave/cli/v2"
 )

@@ -6,10 +6,14 @@
 
 Chunking for [CAR files](https://ipld.io/specs/transport/car/). Split a single CAR into multiple CARs.
 
+## Attention
+author: https://github.com/alanshaw/go-carbites
+
+
 ## Install
 
 ```sh
-go get github.com/alanshaw/go-carbites
+go get github.com/whitiy666/go-carbites
 ```
 
 ## Usage
@@ -23,14 +27,14 @@ Carbites supports 2 different strategies:
 package main
 
 import (
+	"github.com/whitiy666/go-carbites"
 	"io"
 	"os"
-	"github.com/alanshaw/go-carbites"
 )
 
 func main() {
 	bigCar, _ := os.Open("big.car")
-	targetSize := 1024 * 1024 // 1MiB chunks
+	targetSize := 1024 * 1024   // 1MiB chunks
 	strategy := carbites.Simple // also carbites.Treewalk
 	spltr, _ := carbites.Split(bigCar, targetSize, strategy)
 
@@ -60,7 +64,7 @@ func main() {
 
 ## Contribute
 
-Feel free to dive in! [Open an issue](https://github.com/alanshaw/go-carbites/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/whitiy666/go-carbites/issues/new) or submit PRs.
 
 ## License
 
